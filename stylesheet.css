@@ -1,0 +1,53 @@
+
+body{
+	background-color: #F2F2F2;
+}
+
+
+
+header{
+	border: 1px gray solid;
+	width:550px;
+	height: 250px;
+}
+
+img{
+	width: 100px;
+	height: 50px;
+	margin-left: 2%;
+	margin-top: 3%x;
+}
+
+header h2{
+	font-size: 20px;
+}
+
+nav p{
+	width:120px;
+	height:40px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:active{
+	color:#0065FC;
+}
+
+a:visited{
+	color:black;
+}
+
+nav{
+	display:flex;
+	justify-content: space-around;
+}
+
+#head{
+	display:flex;
+	justify-content:space-between;
+}
