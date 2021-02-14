@@ -3,24 +3,24 @@ body{
 	background-color: #F2F2F2;
 }
 
-
-
-header{
-	border: 1px gray solid;
-	width:550px;
-	height: 250px;
-}
-
 img{
 	width: 100px;
 	height: 50px;
-	margin-left: 2%;
+	margin-left: 3%;
 	margin-top: 3%x;
 }
 
-header h2{
-	font-size: 20px;
+section h2, section p{
+	font-family:'Raleway', sans-serif;
+	color:black;
 }
+
+section h2{
+	font-size:20px;
+	font-weight:bold;
+}
+
+
 
 nav p{
 	width:120px;
@@ -43,11 +43,99 @@ a:visited{
 }
 
 nav{
+	border: 1px gray solid;
 	display:flex;
 	justify-content: space-around;
 }
 
-#head{
+header{
+	border: 1px gray solid; 
 	display:flex;
 	justify-content:space-between;
+}
+
+label{
+	width:60px;
+	height:50px;
+	padding:7px;
+	border:1px gray solid;
+	border-radius:6px 0px 0px 6px;
+
+}
+#ville{
+	height:30px;
+	border:1px gray solid;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+
+#rechercher{
+	width:90px;
+	height:35px;
+	border:1px gray solid;
+	border-radius: 0px 6px 6px 0px;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	background-color: #0065FC;
+	font-weight: 500;
+}
+
+ul{
+	display:flex;
+	justify-content: flex-start;
+	list-style-type: none;
+}
+
+li{
+	width: 90px;
+	border: 1px gray solid;
+	text-align: center;
+
+}
+
+.icon{
+	color:#0065FC;
+	width: 20px;
+	height: 20px;
+	border: 1px #DEEBFF solid;
+	border-radius:50%;
+	padding: 8px;
+	text-align: center;
+	background-color: #DEEBFF;
+	margin-left: 20px;
+}
+
+.filter{
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: black;
+	width:150px;
+	height:20px;
+	border:1px gray solid;
+	border-radius:6px;
+	padding:8px;
+	text-align:center;
+	margin-right: 20px;
+}
+#filtres{
+	display:flex;
+}
+
+#infoicon{
+	color:#0065FC;
+	font-weight: lighter;
+	font-size:13px;
+	width:15px;
+	height:15px;
+	border:1px gray solid;
+	border-radius: 50%;
+	padding:5px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+#info{
+	display:flex;
 }
