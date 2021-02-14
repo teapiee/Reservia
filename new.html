@@ -4,97 +4,82 @@
 	<head>
 		<meta charset= "UTF-8"/>
 		<title> New page </title>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/1c3ce562ad.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="stylesheet.css"/>
 
 	</head>
 
 	<body>
-	<div id="head">
-
 		<header>
 			<p>
 				<img src="Reservia@3x.png" alt="Logo du site"/>
 			</p>
+			<nav>
+				<p><a href="#hebergements">Hébergements</a></p>
+				<p><a href="#activites">Activités</a></p>
+				<p><a href="inscription.html">S'inscrire</a></p>
+			</nav>
+		</header>	
 
+		<section>
 			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 			<p>En plein centre ville ou en pleine nature</p>
 
-
-		</header>
-
-
-		<nav>
-			<p><a href="#hebergements">Hébergements</a></p>
-			<p><a href="#activites">Activités</a></p>
-			<p><a href="inscription.html">S'inscrire</a></p>
-		</nav>
-
-
-	</div>
-
-
-
-
-		<section id="container">
-
-			<section>
-
-
-
-
-			</section>
-
-
-
-
-
-			<section>
-
-				<h2 id="hebergements">Hébérgements à Marseille</h2>
-
-
-			</section>
-
-
-
-
-			<aside>
-				<h2>Les plus populaires</h2>
-
-
-			</aside>
-
-
-
-
-
-			<section>
-				<h2 id="activites">Activités à Marseille</h2>
-
-			</section>
-
+			<div id= "recherche">
+				<form method="post" action="traitement.php">
+				<p>
+					<label for="ville"><i class="fas fa-map-marker-alt"></i></label>
+					<input type="text" name="ville" id="ville" placeholder="Marseille,France" size="25"/>
+					<input type="submit" id= "rechercher" value="Rechercher" size="20"/>
+				</p>
+				</form>
+			</div>
+		</section>
+		<section id="filtres">
 		
+			<p>Filtres</p>
+			
+			<div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+			<div class="filter">Économique</div>
+			
+			<div class="icon"><i class="fas fa-child"></i></div>
+			<div class="filter">Familial</div>
+			
+			<div class="icon"><i class="fas fa-heart"></i></div>
+			<div class="filter">Romantique</div>
+			
+			<div class="icon"><i class="fas fa-dog"></i></div>
+			<div class="filter">Animaux autorisés</div>
+		</section>
 
+		<section id="info">
+			<p id="infoicon"><i class="fas fa-info"></i></p>
+			<p>Plus de 500 logements sont disponibles dans cette ville</p>
 		</section>
 
 
 
 
+		<section id="container">
+			<section> 
+			</section>
 
+			<section>
+				<h2 id="hebergements">Hébérgements à Marseille</h2>
+			</section>
 
+			<aside>
+				<h2>Les plus populaires</h2>
+			</aside>
+
+			<section>
+				<h2 id="activites">Activités à Marseille</h2>
+			</section>
+
+		</section>
 
 		<footer>
 		</footer>
-
-
-
-
-
-		
-
-
 	</body>
-
-
 </html>
