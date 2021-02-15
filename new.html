@@ -22,7 +22,7 @@
 			</nav>
 		</header>	
 
-		<section>
+		<section id="intro">
 			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 			<p>En plein centre ville ou en pleine nature</p>
 
@@ -30,27 +30,26 @@
 				<form method="post" action="traitement.php">
 				<p>
 					<label for="ville"><i class="fas fa-map-marker-alt"></i></label>
-					<input type="text" name="ville" id="ville" placeholder="Marseille,France" size="25"/>
-					<input type="submit" id= "rechercher" value="Rechercher" size="20"/>
+					<input type="text" name="ville" id="ville" placeholder="Marseille, France" size="25"/>
+					<input type="submit" id= "rechercher" value="Rechercher"/>
 				</p>
 				</form>
 			</div>
 		</section>
 		<section id="filtres">
-		
 			<p>Filtres</p>
 			
 			<div class="icon"><i class="fas fa-money-bill-wave"></i></div>
-			<div class="filter">Économique</div>
+			<div id="economique">Économique</div>
 			
 			<div class="icon"><i class="fas fa-child"></i></div>
-			<div class="filter">Familial</div>
+			<div id="familial">Familial</div>
 			
 			<div class="icon"><i class="fas fa-heart"></i></div>
-			<div class="filter">Romantique</div>
+			<div id="romantique">Romantique</div>
 			
 			<div class="icon"><i class="fas fa-dog"></i></div>
-			<div class="filter">Animaux autorisés</div>
+			<div id="animaux">Animaux autorisés</div>
 		</section>
 
 		<section id="info">
@@ -58,6 +57,7 @@
 			<p>Plus de 500 logements sont disponibles dans cette ville</p>
 		</section>
 
+		<!--midsection-->
 		<section id="midctr">
 			<section id="centerctr">
 				<h2 id="hebergements">Hébérgements à Marseille</h2>
@@ -81,7 +81,25 @@
 		<section>
 			<h2 id="activites">Activités à Marseille</h2>
 			<section id="lowctr">
-				<p></p>
+				<div class="boxlow">
+					<div id="bboxlower1">
+						<div class="bbox"></div>
+					</div>
+					<div id="msboxlower1">
+						<div class="mbox"></div>
+						<div class="sbox"></div>
+					</div>
+				</div>
+
+				<div class="boxlow">
+					<div id="bboxlower2">
+						<div class="bbox"></div>
+					</div>
+					<div id="msboxlower2">
+						<div class="sbox"></div>
+						<div class="mbox"></div>
+					</div>
+				</div>	
 			</section>
 		</section>
 
@@ -92,13 +110,11 @@
 				<p>Conditions générales de vente</p>
 				<p>Données et confidentialité</p>
 			</div>
-			
 			<div class="footer">
 				<h3>Nos hébergements</h3>
 				<p>Charte qualité</p>
 				<p>Soumettre votre hôtel</p>
 			</div>
-			
 			<div class="footer">
 				<h3>Assistance</h3>
 				<p>Centre d'aide</p>
