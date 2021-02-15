@@ -35,40 +35,46 @@ header{
 	justify-content:space-between;
 }
 
-/*section after header*/
-section h2, section p{
+/*intro section*/
+#intro h2, #intro p{
 	font-family:'Raleway', sans-serif;
 	color:black;
+	font-size:15px;
 }
-section h2{
+#intro h2{
 	font-size:20px;
 	font-weight:bold;
+	margin-bottom:-10px;
 }
 
 /*search bar section*/
 label{
-	width:60px;
+	width:100px;
 	height:50px;
-	padding:7px;
-	border:1px gray solid;
-	border-radius:6px 0px 0px 6px;
+	padding:9px;
+	border:1px #F2F2F2 solid;
+	border-radius:15px 0px 0px 15px;
+	background-color:#F2F2F2;
 }
 #ville{
-	height:30px;
-	border:1px gray solid;
+	height:34px;
 	color: black;
 	font-family: 'Raleway', sans-serif;
+	text-align:center;
 	font-weight: 500;
+	border: 0.8px rgb(238, 235, 235) solid;
+	margin-left:-4px;
 }
 #rechercher{
-	width:90px;
-	height:35px;
-	border:1px gray solid;
-	border-radius: 0px 6px 6px 0px;
+	width:95px;
+	height:39px;
+	border:1px rgb(238, 235, 235) solid;
+	border-radius: 0px 12px 12px 0px;
 	font-family: 'Raleway', sans-serif;
 	color: white;
 	background-color: #0065FC;
 	font-weight: 500;
+	margin-left:-4px;
 }
 #recherche{
 	margin-bottom:45px;
@@ -85,19 +91,33 @@ label{
 	text-align: center;
 	background-color: #DEEBFF;
 	margin-left: 20px;
+	margin-right:-32px;
 }
-.filter{
+#economique, #familial, #romantique, #animaux{
 	font-size: 15px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	color: black;
-	width:150px;
 	height:20px;
-	border:1px gray solid;
-	border-radius:6px;
+	border-top:1px rgb(238, 235, 235) solid;
+	border-right:1px rgb(238, 235, 235) solid;
+	border-bottom:1px rgb(238, 235, 235) solid;
+	border-radius:20px;
 	padding:8px;
 	text-align:center;
 	margin-right: 20px;
+}
+#economique{
+	width:140px;
+}
+#familial{
+	width:120px;
+}
+#romantique{
+	width:140px;
+}
+#animaux{
+	width:180px;
 }
 #filtres{
 	display:flex;
@@ -114,6 +134,11 @@ label{
 	text-align: center;
 	margin-right: 10px;
 }
+#info p{
+	font-family:'Raleway', sans-serif;
+	color:black;
+	font-size:15px;
+}
 #info{
 	display:flex;
 }
@@ -123,7 +148,7 @@ label{
 	width:60%;
 	height:500px;
 	border:1px gray solid;
-	border-radius: 7px;
+	border-radius: 15px;
 	background-color:#F2F2F2;
 	display: flex;
 	flex-wrap: wrap;
@@ -138,23 +163,27 @@ label{
 	width:100%;
 	padding-left:2%;
 	margin-bottom: -10px;
+	font-family:'Raleway', sans-serif;
+	font-weight:700;
+	color:black;
+	font-size:20px;
 }
 .boxcenter{
 	background-color: white;
 	width:210px;
-	height:160px;
+	height:170px;
 	border: 1px gray solid;
 	border-radius: 10px;
 	padding-left: 3%;	
 }
 #sidectr{
 	width:30%;
-	height:515px;
+	height:525px;
 	border: 1px gray solid;
-	border-radius: 7px;
+	border-radius: 15px;
 	background-color:#F2F2F2;	
 	margin-top: 50px;
-	padding-bottom:50px;
+	padding-bottom:40px;
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -162,12 +191,15 @@ label{
 }
 aside h2{
 	width:100%;
-	margin-bottom: -5px;
 	margin-left:50px;
+	font-family:'Raleway', sans-serif;
+	font-weight:700;
+	color:black;
+	font-size:20px;
 }
 .boxside{
 	background-color: white;
-	width:320px;
+	width:310px;
 	height:125px;
 	border: 1px gray solid;
 	border-radius: 10px;
@@ -181,12 +213,49 @@ aside h2{
 }
 
 /*lower section*/
+#activites{
+	font-family:'Raleway', sans-serif;
+	font-weight:700;
+	color:black;
+	font-size:20px;
+}
 #lowctr{
-	width:100%;
+	display:flex;
+}
+.bbox{
+	width:310px;
 	height:450px;
-	border:1px gray solid;
-	border-radius: 7px;
-	background-color:#F2F2F2;
+	border: 1px solid gray;
+	border-radius:10px;
+}
+.mbox{
+	width:300px;
+	height:225px;
+	border:1px solid gray;
+	border-radius:10px;
+}
+.sbox{
+	width:300px;
+	height:190px;
+	border:1px solid gray;
+	border-radius:10px;
+}
+#msboxlower1, #msboxlower2{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#bboxlower1{
+	margin-left:-20px;
+}
+#msboxlower2{
+	margin-right:-20px;
+}
+.boxlow{
+	width:50%;
+	height:100%;;
+	display:flex;
+	justify-content: space-around;
 }
 
 /*footer*/
@@ -194,7 +263,7 @@ footer{
 	width:100%;
 	height:230px;
 	border:1px #F2F2F2 solid;
-	margin-top: 40px;
+	margin-top: 50px;
 	background-color:#F2F2F2;
 	display:flex;
 	justify-content: flex-start;
