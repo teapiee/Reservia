@@ -37,7 +37,7 @@
 			</div>
 		</section>
 		<section id="filtres">
-			<p>Filtres</p>
+			<div id="textefiltres">Filtres</div>
 			
 			<div class="icon"><i class="fas fa-money-bill-wave"></i></div>
 			<div id="economique">Économique</div>
@@ -54,50 +54,108 @@
 
 		<section id="info">
 			<p id="infoicon"><i class="fas fa-info"></i></p>
-			<p>Plus de 500 logements sont disponibles dans cette ville</p>
+			<p id="infotexte">Plus de 500 logements sont disponibles dans cette ville</p>
 		</section>
 
 		<!--midsection-->
 		<section id="midctr">
 			<section id="centerctr">
 				<h2 id="hebergements">Hébérgements à Marseille</h2>
-				<div class="boxcenter"></div>
-				<div class="boxcenter"></div>
-				<div class="boxcenter"></div>
-				<div class="boxcenter"></div>
-				<div class="boxcenter"></div>
-				<div class="boxcenter"></div>
+				<div class="boxcenter">
+					<img src="image.png" alt="image"/> <!--TEST IMAGE-->
+					<p class="nom">Auberge la Cannebière</p>
+					<p class="prix">Nuit à partir de <strong>25€</strong></p>
+					<p class="classement"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="etoiles"><i class="fas fa-star"></i></span></p>
+				</div>
+				<div class="boxcenter">
+					<img src="image.png" alt="image"/> <!--TEST IMAGE-->
+					<p class="nom">Hôtel du Port</p>
+					<p class="prix">Nuit à partir de 52€</p>
+					<p class="classement"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</div>
+				<div class="boxcenter">
+					<img src="image.png" alt="image"/> <!--TEST IMAGE-->
+					<p class="nom">Hôtel Les mouettes</p>
+					<p class="prix">Nuit à partir de 76€</p>
+					<p class="classement"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="etoiles"><i class="fas fa-star"></i></span></p>
+				</div>
+				<div class="boxcenter">
+					<img src="image.png" alt="image"/> <!--TEST IMAGE-->
+					<p class="nom">Hôtel de la mer</p>
+					<p class="prix">Nuit à partir de 46€</p>
+					<p class="classement"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="etoiles"><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
+				</div>
+				<div class="boxcenter">
+					<img src="image.png" alt="image"/> <!--TEST IMAGE-->
+					<p class="nom">Auberge Le Panier</p>
+					<p class="prix">Nuit à partir de <strong>23€</strong></p>
+					<p class="classement"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="etoiles"><i class="fas fa-star"></i></span></p>
+				</div>
+				<div class="boxcenter">
+					<img src="image.png" alt="image"/> <!--TEST IMAGE-->
+					<p class="nom">Hôtel chez Amina</p>
+					<p class="prix">Nuit à partir de 96€</p>
+					<p class="classement"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</div>
 			</section>
 
 			<aside id="sidectr">
 				<h2>Les plus populaires</h2>
-				<div class="boxside"></div>
-				<div class="boxside"></div>
-				<div class="boxside"></div>
+				<div class="boxside">
+					<p class="nom">Hôtel Le soleil du matin</p>
+					<p class="prix">Nuit à partir de 128€</p>
+					<p class="classement"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</div>
+				<div class="boxside">
+					<p class="nom">Au coeur de l'eau Chambres d'hôtes</p>
+					<p class="prix">Nuit à partir de 71€</p>
+					<p class="classement"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="etoiles"><i class="fas fa-star"></i></span></p>
+				</div>
+				<div class="boxside">
+					<p class="nom">Hôtel Tout bleu et Blanc</p>
+					<p class="prix">Nuit à partir de 68€</p>
+					<p class="classement"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="etoiles"><i class="fas fa-star"></i></span></p>
+				</div>
 			</aside>
 
 		</section>
 
 		<section>
 			<h2 id="activites">Activités à Marseille</h2>
-			<section id="lowctr">
-				<div class="boxlow">
-					<div id="bboxlower1">
-						<div class="bbox"></div>
+			<section id="lowctr"> <!--container for the 6 elements/boxes-->
+				
+				<div class="boxlow"> <!--container for (first) 3 boxes-->
+					
+					<div id="bboxlower1"> <!--container for 1st big box-->
+						<div class="bbox"> <!-- 1st big box-->
+							<p class="nom">Vieux Port</p>
+						</div> 
 					</div>
-					<div id="msboxlower1">
-						<div class="mbox"></div>
-						<div class="sbox"></div>
+					
+					<div id="msboxlower1"> <!--container for 1st medium & small box-->
+						<div class="mbox"> <!--1st medium box-->
+							<p class="nom">Fort de Pomègues</p> 
+						</div> 
+						<div class="sbox"> <!--1st small box-->
+							<p class="nom">Îles du Frioul</p>
+						</div> 
 					</div>
 				</div>
 
-				<div class="boxlow">
-					<div id="bboxlower2">
-						<div class="bbox"></div>
+				<div class="boxlow"> <!--container for (second) 3 boxes-->
+					
+					<div id="bboxlower2"> <!--container for 2nd big box-->
+						<div class="bbox"> <!-- 2nd big box-->
+							<p class="nom">Parc National des Calanques</p>
+						</div> 
 					</div>
-					<div id="msboxlower2">
-						<div class="sbox"></div>
-						<div class="mbox"></div>
+					<div id="msboxlower2"> <!--container for 2nd medium & small box-->
+						<div class="sbox"> <!--2nd small box-->
+							<p class="nom">Notre-Dame-de-la-Garde</p>
+						</div> 
+						<div class="mbox"> <!--2nd medium box-->
+							<p class="nom">Parc Longchamp</p>
+						</div> 
 					</div>
 				</div>	
 			</section>
