@@ -49,9 +49,9 @@ header{
 
 /*search bar section*/
 label{
-	width:100px;
 	height:50px;
 	padding:9px;
+	text-align: center;
 	border:1px #F2F2F2 solid;
 	border-radius:15px 0px 0px 15px;
 	background-color:#F2F2F2;
@@ -63,7 +63,7 @@ label{
 	text-align:center;
 	font-weight: 500;
 	border: 0.8px rgb(238, 235, 235) solid;
-	margin-left:-4px;
+	
 }
 #rechercher{
 	width:95px;
@@ -77,7 +77,7 @@ label{
 	margin-left:-4px;
 }
 #recherche{
-	margin-bottom:45px;
+	margin-bottom:30px;
 }
 
 /*filter section*/
@@ -93,60 +93,78 @@ label{
 	margin-left: 20px;
 	margin-right:-32px;
 }
-#economique, #familial, #romantique, #animaux{
+#textefiltres, #economique, #familial, #romantique, #animaux{
 	font-size: 15px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	color: black;
 	height:20px;
-	border-top:1px rgb(238, 235, 235) solid;
-	border-right:1px rgb(238, 235, 235) solid;
-	border-bottom:1px rgb(238, 235, 235) solid;
 	border-radius:20px;
 	padding:8px;
 	text-align:center;
-	margin-right: 20px;
+	margin-bottom: 20px;
+}
+#economique, #familial, #romantique, #animaux{
+	border-top:1px rgb(238, 235, 235) solid;
+	border-right:1px rgb(238, 235, 235) solid;
+	border-bottom:1px rgb(238, 235, 235) solid;
 }
 #economique{
-	width:140px;
+	width:160px;
 }
 #familial{
 	width:120px;
 }
 #romantique{
-	width:140px;
+	width:160px;
 }
 #animaux{
-	width:180px;
+	width:200px;
 }
 #filtres{
 	display:flex;
 }
+#economique:hover{     /*bleu au survol des filtres*/
+	color:#0065FC;
+}
+#familial:hover{
+	color:#0065FC;
+}
+#romantique:hover{
+	color:#0065FC;
+}
+#animaux:hover{      /*fin survol*/
+	color:#0065FC;
+}
+
+
+/*info section*/
 #infoicon{
 	color:#0065FC;
 	font-weight: lighter;
-	font-size:13px;
+	font-size:12px;
 	width:15px;
 	height:15px;
-	border:1px gray solid;
+	border:1px rgb(238, 235, 235) solid;
 	border-radius: 50%;
-	padding:5px;
+	padding:4px;
 	text-align: center;
 	margin-right: 10px;
 }
-#info p{
+#infotexte{
 	font-family:'Raleway', sans-serif;
-	color:black;
 	font-size:15px;
 }
 #info{
 	display:flex;
 }
 
-/*midctr section*/
+/*Midcenter Section*/
+
+/*center section*/
 #centerctr{
-	width:60%;
-	height:500px;
+	width:63%;
+	height:565px;
 	border:1px gray solid;
 	border-radius: 15px;
 	background-color:#F2F2F2;
@@ -157,12 +175,12 @@ label{
 	padding-right: 2%;
 	padding-top: 1%;
 	padding-bottom:4%;
-	margin-top: 50px;;
 }
 #hebergements{
 	width:100%;
+	height:8%;
 	padding-left:2%;
-	margin-bottom: -10px;
+	margin-bottom:-20px;
 	font-family:'Raleway', sans-serif;
 	font-weight:700;
 	color:black;
@@ -171,18 +189,45 @@ label{
 .boxcenter{
 	background-color: white;
 	width:210px;
-	height:170px;
-	border: 1px gray solid;
+	height:180px;
 	border-radius: 10px;
 	padding-left: 3%;	
+	margin-top:-50px;
 }
+img[alt="image"]{ /*TEST for images*/
+	width:180px;
+	height:90px;
+	margin:3px 3px 4px 3px;
+	text-align: center;
+	border:1px gray solid;
+}
+.nom{
+	font-family:'Raleway', sans-serif;
+	font-weight:700;
+	font-size:14px;
+	margin-bottom:-11px;
+}
+.prix{
+	font-family:'Raleway', sans-serif;
+	font-weight:400;
+	font-size:13px;
+	margin-bottom:-6px;
+}
+.classement{
+	color:#0065FC;
+	font-size:11px;
+}
+.etoiles{
+	color:rgb(209, 203, 203);
+}
+
+/*aside section*/
 #sidectr{
 	width:30%;
-	height:525px;
+	height:590px;
 	border: 1px gray solid;
 	border-radius: 15px;
 	background-color:#F2F2F2;	
-	margin-top: 50px;
 	padding-bottom:40px;
 	display:flex;
 	flex-direction: column;
@@ -192,6 +237,7 @@ label{
 aside h2{
 	width:100%;
 	margin-left:50px;
+	margin-bottom:-30px;
 	font-family:'Raleway', sans-serif;
 	font-weight:700;
 	color:black;
@@ -199,16 +245,16 @@ aside h2{
 }
 .boxside{
 	background-color: white;
-	width:310px;
+	width:305px;
 	height:125px;
-	border: 1px gray solid;
 	border-radius: 10px;
 	padding-left: 3%;
 }
 
-#midctr{
+#midctr{ /*container for center and side: flexed*/
 	display:flex;
 	justify-content: space-between;
+	margin-top: 25px;
 	margin-bottom: 70px;
 }
 
