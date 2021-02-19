@@ -1,13 +1,12 @@
 body{
-	margin-left:3%;
-	margin-right:3%;
+	margin-left:5%;
+	margin-right:5%;
 }
 
 /*header*/
-img{
-	width: 100px;
+img[alt*="Logo"]{
+	width: 27%;
 	height: 50px;
-	margin-left: 3%;
 	margin-top: 3%;
 }
 nav p{
@@ -82,56 +81,66 @@ label{
 }
 
 /*filter section*/
-.icon{
-	color:#0065FC;
-	width: 20px;
-	height: 20px;
-	border: 1px #DEEBFF solid;
-	border-radius:50%;
-	padding: 8px;
-	text-align: center;
-	background-color: #DEEBFF;
-	margin-left: 20px;
-	margin-right:-32px;
+#filtres{
+	width:80%;
+	min-width:65%;
+	height:50px;
+	display:flex;
+	justify-content: space-between;
 }
-#textefiltres, #economique, #familial, #romantique, #animaux{
+#filtres_ctr{
+	width:90%;
+	display:flex;
+	justify-content: flex-start;
+}
+#filtres_texte{
+	width:10%;
+	padding-top:10px; /*align with icon and texte*/
+}
+.filtres_contenu{
+	width:22%;
+	height:75%;
+	display:flex;
+	justify-content: flex-start;
+}
+.filtres_icon{
+	width:18%;
+	text-align: center;
+	color:#0065FC;
+    background-color: #DEEBFF;
+	border: 1px #DEEBFF solid;
+    border-radius:50%;
+	padding-top:10px; /*center icon in the circle*/
+	margin-right: -30px;
+}
+.eco_rom, #familial, #animaux{
+	padding-top:8px; /*to align text with icon*/
+	padding-left:18px;
+	border-top:1px rgb(238, 234, 234) solid;
+    border-right:1px rgb(238, 234, 234) solid;
+    border-bottom:1px rgb(238, 234, 234) solid;
+	border-radius: 20px;
+	text-align:center;
+}
+.eco_rom{
+	width:60%;
+}
+#familial{
+	width:50%;
+}
+#animaux{
+	width:85%;
+}
+#filtrestexte, .eco_rom, #familial, #animaux{
 	font-size: 15px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	color: black;
-	height:20px;
-	border-radius:20px;
-	padding:8px;
-	text-align:center;
-	margin-bottom: 20px;
 }
-#economique, #familial, #romantique, #animaux{
-	border-top:1px rgb(238, 235, 235) solid;
-	border-right:1px rgb(238, 235, 235) solid;
-	border-bottom:1px rgb(238, 235, 235) solid;
-}
-#economique{
-	width:160px;
-}
-#familial{
-	width:120px;
-}
-#romantique{
-	width:160px;
-}
-#animaux{
-	width:200px;
-}
-#filtres{
-	display:flex;
-}
-#economique:hover{     /*bleu au survol des filtres*/
+.eco_rom:hover{     /*bleu au survol des filtres*/
 	color:#0065FC;
 }
 #familial:hover{
-	color:#0065FC;
-}
-#romantique:hover{
 	color:#0065FC;
 }
 #animaux:hover{      /*fin survol*/
@@ -140,7 +149,7 @@ label{
 
 
 /*info section*/
-#infoicon{
+#info_icon{
 	color:#0065FC;
 	font-weight: lighter;
 	font-size:12px;
@@ -152,7 +161,7 @@ label{
 	text-align: center;
 	margin-right: 10px;
 }
-#infotexte{
+#info_texte{
 	font-family:'Raleway', sans-serif;
 	font-size:15px;
 }
@@ -162,24 +171,37 @@ label{
 
 /*Midcenter Section*/
 
-/*center section*/
-#centerctr{
-	width:63%;
-	height:565px;
-	border-radius: 15px;
-	background-color:#F2F2F2;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding-left: 2%;
-	padding-right: 2%;
-	padding-top: 1%;
-	padding-bottom:4%;
+#midsection{ /*container for center and side: flexed*/
+	display:flex;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-bottom: 70px;
 }
-#hebergements{
+
+/*center section*/
+#center_ctr{
+	width:66%;
+	height:625px;
+	border-radius: 15px;
+	padding-bottom: 10px;
+	background-color:#F2F2F2;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#hebergements_contenu{
+	width:92%;
+	height:85%;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+#hebergements_texte{
 	width:100%;
-	height:8%;
-	padding-left:2%;
+	height:5%;
+	padding-left:8%;
 	margin-bottom:-20px;
 	font-family:'Raleway', sans-serif;
 	font-weight:700;
@@ -188,59 +210,66 @@ label{
 }
 .boxcenter{
 	background-color: white;
-	width:210px;
-	height:180px;
+	width:30%;
+	height:35%;
 	border-radius: 18px;
 	box-shadow:3px 5px 6px #e7e5e5;
-	padding-left: 3%;	
-	margin-top:-50px;
 }
-
-img[alt*="Image chambre"]{ /*TEST for images*/
-	width:220px;
-	height:110px;
-	margin:4px 0px 1px -17px;
-	border-radius:15px 15px 0px 0px;
+img[alt*="Image chambre"]{
+	width:95%;
+	height:55%;
+    border-radius:15px 15px 0px 0px;
+	margin-top:4px;
+	margin-left:6px;
 	object-fit: cover;
+}
+.boxcenter_texte{
+	height:45%;
+	margin-top:-11px;
+	padding-left:15px;
 }
 .nomhebergement{
 	font-family:'Raleway', sans-serif;
 	font-weight:700;
 	font-size:15px;
-	margin-bottom:-11px;
-	margin-left:-8px;
-	margin-top:2px;
+	padding-top:-2px;
+	margin-bottom:-8px;
 }
 .prix{
 	font-family:'Raleway', sans-serif;
 	font-weight:400;
 	font-size:13px;
-	margin-bottom:-6px;
-	margin-left:-8px;
+	margin-bottom:-5px;
 }
 .classement{
 	color:#0065FC;
 	font-size:11px;
-	margin-left:-8px;
 }
 .etoiles{
 	color:rgb(209, 203, 203);
 }
 
 /*aside section*/
-#sidectr{
-	width:30%;
-	height:590px;
+#aside_ctr{
+	width:31%;
+	height:625px;
 	border-radius: 15px;
 	background-color:#F2F2F2;	
-	padding-bottom:40px;
+	padding-bottom: 10px;
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 }
+#titre_aside{
+	width:100%;
+	height:50px;
+	margin-bottom:-10px;
+	display:flex;
+	justify-content:space-between;
+}
 aside h2{
-	width:200px;
+	width:50%;
 	height:25px;
 	margin-left:30px;
 	font-family:'Raleway', sans-serif;
@@ -248,36 +277,15 @@ aside h2{
 	color:black;
 	font-size:20px;
 }
-#iconchart{
+#icon_chart{
 	height:20px;
-	font-size: 20px;
+	font-size: 25px;
 	margin-top:18px;
 	margin-right:35px;
 }
-#titreside{
-	width:100%;
-	height:50px;
-	margin-bottom:-10px;
-	display:flex;
-	justify-content:space-between;
-}
-img[title*="Cliquez ici"]{ /*TEST for images*/
-	width:125px;
-	height:130px;
-	margin:5px 0px 5px 7px;
-	border-radius:15px 0px 0px 15px;
-	object-fit: cover;
-}
-.imgboxside{
-	margin-left:-30px;
-}
-.texteside{
-	width:130px;
-	padding-top:13px;
-}
-.boxside{
+.boxaside{
 	background-color: white;
-	width:300px;
+	width:77%;
 	height:140px;
 	border-radius: 18px;
 	box-shadow:3px 5px 6px #e7e5e5;
@@ -285,13 +293,22 @@ img[title*="Cliquez ici"]{ /*TEST for images*/
 	display:flex;
 	justify-content: space-around;
 }
-
-#midctr{ /*container for center and side: flexed*/
-	display:flex;
-	justify-content: space-between;
-	margin-top: 25px;
-	margin-bottom: 70px;
+img[title*="Cliquez ici"]{ /*TEST for images*/
+	width:95%;
+	height:130px;
+	margin:5px 0px 5px 7px;
+	border-radius:15px 0px 0px 15px;
+	object-fit: cover;
 }
+.boxaside_img{
+	width:45%;
+	margin-left:-28px;
+}
+.boxaside_texte{
+	width:45%;
+	padding-top:13px;
+}
+
 
 /*lower section*/
 #activites{
@@ -300,29 +317,43 @@ img[title*="Cliquez ici"]{ /*TEST for images*/
 	color:black;
 	font-size:20px;
 }
-img[alt="bimgactivite"]{ /*TEST for images*/
-	width:310px;
+img[alt="Le Vieux Port"]{
+	width:100%;
 	height:400px;
 	margin:0px;
 	border-radius:15px 14px 0px 0px;
 	object-fit: cover;
 }
-img[alt="mimgactivite"]{ /*TEST for images*/
-	width:300px;
+img[alt="Le Parc National des Calanques"]{
+	width:100%;
+	height:400px;
+	margin:0px;
+	border-radius:15px 14px 0px 0px;
+	object-fit: cover;
+}
+img[alt="Le Fort de Pomègues"]{
+	width:100%;
 	height:170px;
 	margin:0px;
 	border-radius:15px 14px 0px 0px;
 	object-fit: cover;
 }
-img[alt="simgactivite"]{ /*TEST for images*/
-	width:300px;
+img[alt="Le Parc Longchamp"]{
+	width:100%;
+	height:170px;
+	margin:0px;
+	border-radius:15px 14px 0px 0px;
+	object-fit: cover;
+}
+img[alt="Le Notre-Dame-de-la-Garde"]{
+	width:100%;
 	height:140px;
 	margin:0px;
 	border-radius:15px 14px 0px 0px;
 	object-fit: cover;
 }
-img[alt="simgactivite1"]{ /*TEST for images*/
-	width:300px;
+img[alt="Les Îles du Frioul"]{
+	width:100%;
 	height:140px;
 	margin:0px;
 	border-radius:15px 14px 0px 0px;
@@ -355,43 +386,42 @@ img[alt="simgactivite1"]{ /*TEST for images*/
 	margin-top:10px;
 }
 
-#lowctr{
+#low_ctr{
 	display:flex;
-}
-.bbox{
-	width:310px;
-	height:450px;
-	border-radius:18px;
-	box-shadow:6px 4px 4px #F2F2F2;
-}
-.mbox{
-	width:300px;
-	height:225px;
-	border-radius:18px;
-	box-shadow:6px 4px 4px #F2F2F2;
-}
-.sbox{
-	width:300px;
-	height:190px;
-	border-radius:18px;
-	box-shadow:6px 4px 4px #F2F2F2;
-}
-#msboxlower1, #msboxlower2{
-	display:flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-#bboxlower1{
-	margin-left:-20px;
-}
-#msboxlower2{
-	margin-right:-20px;
 }
 .boxlow{
 	width:50%;
 	height:100%;;
 	display:flex;
 	justify-content: space-around;
+}
+#bbox_low1, #bbox_low2{
+	width:47%;
+	margin-left:-20px;
+}
+#msbox_low1, #msbox_low2{
+	width:45%;
+}
+#msbox_low2{
+	margin-right:-20px;
+}
+#msbox_low1, #msbox_low2{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.bbox, .mbox, .sbox{
+	border-radius:18px;
+	box-shadow:6px 4px 4px #F2F2F2;
+}
+.bbox{
+	height:450px;
+}
+.mbox{
+	height:225px;
+}
+.sbox{
+	height:190px;
 }
 
 /*footer*/
