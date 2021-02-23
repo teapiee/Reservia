@@ -83,7 +83,6 @@ label{
 /*filter section*/
 #filtres{
 	width:80%;
-	min-width:65%;
 	height:50px;
 	display:flex;
 	justify-content: space-between;
@@ -94,6 +93,8 @@ label{
 	justify-content: flex-start;
 }
 #filtres_texte{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 	width:10%;
 	padding-top:10px; /*align with icon and texte*/
 }
@@ -132,7 +133,7 @@ label{
 	width:85%;
 }
 #filtrestexte, .eco_rom, #familial, #animaux{
-	font-size: 15px;
+	font-size: 0.9em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	color: black;
@@ -435,7 +436,7 @@ footer{
 	justify-content: flex-start;
 }
 .footer{
-	width:400px;
+	width:30%;
 	margin-left: 50px;
 	margin-top: 30px;
 }
@@ -443,13 +444,101 @@ footer{
 footer h3{
 	font-family:'Raleway', sans-serif;
 	font-weight:700;
-	font-size:17px;
+	font-size:1.1em;
 	color:black;
 }
 
 footer p{
 	font-family:'Raleway', sans-serif;
 	font-weight:400;
-	font-size:15px;
+	font-size:1em;
 	color:black;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media all and (max-width:768px){
+	
+	body{
+		margin-left:3%;
+		margin-right:3%;
+	}
+
+	/*filtres*/
+	#filtres{
+		width:auto;
+		height:100px;
+		flex-direction:column;
+		justify-content: space-around;
+	}
+	#filtres_texte{
+		width:8%;
+	}
+	#filtres_ctr{
+		width:auto;
+		height:45px;
+		justify-content:space-between;
+	}
+	.filtres_contenu{
+		width:25%;
+		height:85%;
+	}
+	.filtres_icon{
+		width:20%;
+		margin-right:-25px;
+	}
+	.eco_rom{
+		width: 70%;
+	}
+	#familial{
+		width: 55%;
+	}
+	#animaux{
+		width:100%;
+	}
+	/*mid section*/
+	#midsection{
+		flex-direction: column;
+		justify-content: space-around;
+		height:1300px;
+	}
+	/*center box*/
+	#center_ctr{
+		width:auto;
+		height: 600px;
+	}
+	#hebergements_contenu{
+		width: 95%;
+		height: 85%;
+	}
+	.boxcenter{
+		width: 32%;
+	}
+	/*aside box*/
+	#aside_ctr{
+		width:auto;
+	}
+	.boxaside{
+		padding-left:2%;
+	}
+
+	/*lower section*/
+	#low_ctr{
+		height:950px;
+		flex-direction: column;
+	}
+	.boxlow{
+		width:auto;
+		margin-bottom:4%;
+	}
+	#msbox_low1{
+		margin-right:-20px;
+	}
+
+	/*footer*/
+	
+	footer{
+		height:250px;
+	}
 }
