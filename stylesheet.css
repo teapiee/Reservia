@@ -5,13 +5,23 @@ body{
 
 /*header*/
 img[alt*="Logo"]{
-	width: 27%;
-	height: 50px;
+	width: 35%;
+	height: 80%;
 	margin-top: 3%;
 }
-nav p{
-	width:120px;
-	height:40px;
+header{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:3%;
+}
+nav{
+	width:45%;
+	display:flex;
+	justify-content: space-around;
+}
+.menu, #inscription{
+	width:35%;
+	height:40%;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
@@ -25,14 +35,6 @@ a:active{
 a:visited{
 	color:black;
 }
-nav{
-	display:flex;
-	justify-content: space-around;
-}
-header{
-	display:flex;
-	justify-content:space-between;
-}
 
 /*intro section*/
 #intro h2, #intro p{
@@ -43,7 +45,6 @@ header{
 	width:80%;
 	font-size:1.2em;
 	font-weight:bold;
-	margin-bottom:-1%;
 }
 #intro p{
 	font-size:1em;
@@ -197,6 +198,16 @@ label{
 	justify-content: space-around;
 	align-items: center;
 }
+#hebergements_texte{
+	width:100%;
+	height:5%;
+	padding-left:8%;
+	margin-bottom:-7%;
+	font-family:'Raleway', sans-serif;
+	font-weight:700;
+	color:black;
+	font-size:20px;
+}
 #hebergements_contenu{
 	width:92%;
 	height:85%;
@@ -204,16 +215,8 @@ label{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: flex-start;
-}
-#hebergements_texte{
-	width:100%;
-	height:5%;
-	padding-left:8%;
-	margin-bottom:-20px;
-	font-family:'Raleway', sans-serif;
-	font-weight:700;
-	color:black;
-	font-size:20px;
+	margin-top: 6%;
+	margin-bottom:-10%;
 }
 .boxcenter{
 	background-color: white;
@@ -254,6 +257,13 @@ img[alt*="Image chambre"]{
 }
 .etoiles{
 	color:rgb(209, 203, 203);
+}
+#plus{
+	width:93%;
+	font-family:'Raleway', sans-serif;
+	font-weight:700;
+	font-size:1.1em;
+	color:black;
 }
 
 /*aside section*/
@@ -547,26 +557,30 @@ footer p{
 	
 	/*header unsolved*/
 	img[alt*="Logo"]{
-		width: 30%;
-		height: 45px;
+		width: 45%;
+		height: 35%;;
 		border:1px solid gray;
 	}
-	nav p{
-		width:70%;
-		border:1px solid gray;
+	.menu{
+		width:45%;
+		height: 20%;
+		font-weight: 600;
+		border:1px solid gray;	
 	}	
+	#inscription{
+		width:65%;
+		height:20%;
+	}
 	nav{
-		width:70%;
-		display:flex;
+		width:90%;
+		flex-wrap:wrap-reverse;
 		justify-content: space-around;
+		
 	}
 	header{
-		display:flex;
-		flex-wrap: wrap;
-		justify-content:space-between;
 		border:1px solid gray;
 	}
-
+	
 	/*filtres unsolved: flex wrap filtres animaux*/
 	#filtres{
 		width:auto;
@@ -605,8 +619,8 @@ footer p{
 	/*mid section*/
 	#midsection{
 		width:auto;
-		flex-direction: column;
-		justify-content: flex-start;
+		flex-direction: column-reverse;
+		justify-content: space-around;
 		height:2000px;	
 	}
 	/*center section*/
@@ -618,12 +632,16 @@ footer p{
 	}
 	#hebergements_contenu{
 		width:95%;
-		height:93%;
+		height:95%;
 		display:flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		align-items: space-between;
+		margin-top:10%;
 		
+	}
+	#plus{
+		margin-top:13%;
 	}
 	.boxcenter{
 		background-color: white;
@@ -645,13 +663,17 @@ footer p{
 
 	
 	/*lower section*/
+	#activites{
+		margin-left:3%;
+		margin-top:-10%;
+	}
 	#low_ctr{
 		width:auto;
-		height:1800px;
+		height:1600px;
 		display:flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		margin-bottom: -50%;
+		margin:-5% 2% -35% 2%;	
 	}
 	.boxlow{
 		width:auto;
