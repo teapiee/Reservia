@@ -225,6 +225,10 @@ label{
 	border-radius: 18px;
 	box-shadow:3px 5px 6px #e7e5e5;
 }
+.boxcenter a{
+	color:black;
+	text-decoration: none;
+}
 img[alt*="Image chambre"]{
 	width:95%;
 	height:55%;
@@ -302,7 +306,7 @@ aside h2{
 }
 .boxaside{
 	background-color: white;
-	width:77%;
+	width:80%;
 	height:140px;
 	border-radius: 18px;
 	box-shadow:3px 5px 6px #e7e5e5;
@@ -398,6 +402,10 @@ img[alt="Les Îles du Frioul"]{
 	height:100%;;
 	display:flex;
 	justify-content: space-around;
+}
+.boxlow a{
+	color:black;
+	text-decoration: none;
 }
 #bbox_low1, #bbox_low2{
 	width:47%;
@@ -574,7 +582,7 @@ footer p{
 	nav{
 		width:90%;
 		flex-wrap:wrap-reverse;
-		justify-content: space-around;
+		justify-content: space-between;
 		
 	}
 	header{
