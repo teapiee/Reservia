@@ -71,9 +71,8 @@ nav{
 /*search bar section*/
 label{
 	height:50px;
-	padding:9px;
+	padding:10px;
 	text-align: center;
-	border:1px #F2F2F2 solid;
 	border-radius:15px 0px 0px 15px;
 	background-color:#F2F2F2;
 }
@@ -131,7 +130,6 @@ label{
 	text-align: center;
 	color:#0065FC;
     background-color: #DEEBFF;
-	border: 1px #DEEBFF solid;
     border-radius:50%;
 	padding-top:10px; /*center icon in the circle*/
 	margin-right: -17%;
@@ -267,7 +265,6 @@ img[alt*="Image chambre"]{
 	font-family:'Raleway', sans-serif;
 	font-weight:700;
 	font-size:15px;
-	padding-top:-2px;
 	margin-bottom:-8px;
 }
 .prix{
@@ -472,7 +469,6 @@ img[alt="Les Îles du Frioul"]{
 footer{
 	width:100%;
 	height:230px;
-	border:1px #F2F2F2 solid;
 	margin-top:7%;
 	background-color:#F2F2F2;
 	display:flex;
@@ -684,9 +680,7 @@ footer p{
 		display:flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		align-items: space-between;
 		margin-top:10%;
-		
 	}
 	#plus{
 		margin-top:13%;
