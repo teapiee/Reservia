@@ -30,11 +30,19 @@
 
 				<div id= "recherche">
 					<form method="post" action="traitement.php">
-					<p>
-						<label for="ville"><i class="fas fa-map-marker-alt"></i></label>
-						<input type="text" name="ville" id="ville" placeholder="Marseille, France" size="25"/>
-						<input type="submit" id= "rechercher" value="Rechercher"/>
-					</p>
+						<div id="recherche_label_input">
+							<label for="ville"><i class="fas fa-map-marker-alt"></i></label>
+							<input type="text" name="ville" id="ville" placeholder="Marseille, France" size="25"/>
+						</div>
+						<div id="recherche_bouton">
+							<div class="recherche_mot">
+								<input type="submit" id= "rechercher" value="Rechercher"/>
+							</div>
+							<div class="recherche_loupe">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+		
 					</form>
 				</div>
 			

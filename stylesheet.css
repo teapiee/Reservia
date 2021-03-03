@@ -69,36 +69,48 @@ nav{
 }
 
 /*search bar section*/
+form{
+    margin-bottom:30px;
+    display:flex;
+    justify-content: flex-start;
+}
+#recherche_bouton{
+    display:flex;
+    justify-content:flex-start;
+}
 label{
-	height:50px;
-	padding:10px;
-	text-align: center;
-	border-radius:15px 0px 0px 15px;
-	background-color:#F2F2F2;
+    height:50px;
+    padding:9px;
+    text-align: center;
+    border:1px #F2F2F2 solid;
+    border-radius:15px 0px 0px 15px;
+    background-color:#F2F2F2;
 }
 #ville{
-	height:34px;
-	color: black;
-	font-family: 'Raleway', sans-serif;
-	text-align:center;
-	font-weight: 500;
-	border: 0.8px rgb(238, 235, 235) solid;
-	margin-left:-6px;
-	
+    height:34px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-align:center;
+    font-weight: 500;
+    border: 0.8px rgb(238, 235, 235) solid;
+    margin-left:-6px;
+    
 }
 #rechercher{
-	width:95px;
-	height:40px;
-	border:1px rgb(238, 235, 235) solid;
-	border-radius: 0px 12px 12px 0px;
-	font-family: 'Raleway', sans-serif;
-	color: white;
-	background-color: #0065FC;
-	font-weight: 500;
-	margin-left:-4px;
+    width:95px;
+    height:40px;
+    border:1px rgb(238, 235, 235) solid;
+    border-radius: 0px 12px 12px 0px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #0065FC;
+    font-weight: 500;
+    margin-left:-4px;
+    z-index:2;
+    position: absolute;
 }
-#recherche{
-	margin-bottom:30px;
+.recherche_loupe{
+    z-index:1;
 }
 
 /*filter section*/
@@ -298,7 +310,6 @@ img[alt*="Image chambre"]{
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-items: center;
 }
 #aside_ctr a{
 	color:black;
@@ -565,7 +576,10 @@ footer p{
 		width:auto;
 	}
 	.boxaside{
-		padding-left:2%;
+		width:70%;
+		padding-left:1%;
+		margin-left:15%;
+		margin-top:-4%;
 	}
 
 	/*lower section*/
@@ -621,7 +635,30 @@ footer p{
 	header{
 		border:1px solid gray;
 	}
-	
+	/*recherche_input section*/
+	#rechercher{
+        z-index:1;
+        position: absolute;
+        width:5px;
+        height:5px;
+        
+    }
+    .recherche_loupe{
+        z-index:2;
+        position:absolute;
+        width:41px;
+        height:37px;
+        border:1px rgb(238, 235, 235) solid;
+        border-radius: 0px 12px 12px 0px;
+        color: white;
+        background-color: #0065FC;
+        font-weight: 500;
+        margin-left:-4px;
+    }
+    .recherche_loupe i{
+        padding-top:10px;
+        padding-left:10px;
+    }
 	/*filtres unsolved: flex wrap filtres animaux*/
 	#filtres{
 		width:auto;
