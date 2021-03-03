@@ -148,9 +148,7 @@ label{
 }
 #economique, #romantique, #familial, #animaux{
 	padding-top:4%; /*to align text with icon*/
-	border-top:1px rgb(204, 200, 200) solid;
-    border-right:1px rgb(204, 200, 200) solid;
-    border-bottom:1px rgb(204, 200, 200) solid;
+	border:1px solid rgb(228, 225, 225);
 	border-radius: 20px;
 	text-align:center;
 }
@@ -343,8 +341,8 @@ aside h2{
 	height:140px;
 	border-radius: 18px;
 	box-shadow:3px 5px 6px #e7e5e5;
-	padding-left:3%; /*move photo to the left*/
-	margin-left:7%; /*move box to the left*/
+	padding-left:3%; /*move photo to the right*/
+	margin-left:7%; /*move box to the right*/
 	display:flex;
 	justify-content: space-around;
 }
@@ -371,6 +369,7 @@ img[title*="Cliquez ici"]{ /*TEST for images*/
 	font-weight:700;
 	color:black;
 	font-size:1.2em;
+	margin-left:1%;
 }
 img[alt="Le Vieux Port"]{
 	width:100%;
@@ -430,6 +429,7 @@ img[alt="Les Îles du Frioul"]{
 #low_ctr{
 	height:450px;
 	display:flex;
+	justify-content: space-between;
 }
 .boxlow{
 	width:50%;
@@ -442,19 +442,12 @@ img[alt="Les Îles du Frioul"]{
 	text-decoration: none;
 }
 #bbox_low1, #bbox_low2{
-	width:47%;
+	width:45%;
 	height:100%;
-	margin-left:-4%;
 }
 #msbox_low1, #msbox_low2{
 	width:45%;
 	height:100%;
-}
-#msbox_low2{
-	margin-right:-6%;
-}
-#bbox_low2{
-	margin-right:-6%;
 }
 #msbox_low1, #msbox_low2{
 	display:flex;
@@ -585,25 +578,31 @@ footer p{
 	}
 
 	/*lower section*/
+	#activites_texte{
+		margin-left:3%;
+	}
 	#low_ctr{
-		height:1350px;
+		height:1000px;
 		flex-direction: column;
+		justify-content: flex-start;
 	}
 	.boxlow{
 		width:auto;
-		height:80%;
+		height:40%;
 		margin-bottom:4%;
 	}
-	#bbox_low2{
-		margin-left:-7%
+	#bbox_low1, #bbox_low2, #msbox_low1, #msbox_low2{
+		height:90%;
 	}
-	#msbox_low1{
-		margin-right:-20px;
+	.mbox, .sbox{
+		height:47%;
 	}
+	
 
 	/*footer*/
 	footer{
 		height:300px;
+		margin-top: -10%;
 	}
 }
 
@@ -611,21 +610,26 @@ footer p{
 @media all and (max-width:480px){
 	
 	/*header unsolved*/
+	header{
+		height:100px;
+	}
 	img[alt*="Logo"]{
-		width: 120px;
+		width: 105px;
 		height: 50px;
-		border:1px solid gray;
+		margin-left:2%;
+		margin-top:4%;
 	}
 	.menu{
 		width:50%;
 		font-weight: 600;
-		border:1px solid gray;	
 	}	
 	.menu_nav{
-		width:100%;
+		width:150%;
+		margin-left:-45%;
+		margin-bottom:-10%;
 	}
 	#inscription{
-		width:95%;
+		width:93%;
 		height:20%;
 		display:flex;
 		justify-content:flex-end;
@@ -635,8 +639,13 @@ footer p{
 		flex-direction:column-reverse;
 		justify-content: space-around;
 	}
-	header{
-		border:1px solid gray;
+
+	#recherche_filtre{
+		margin-left:2%;
+		margin-right:2%;
+	}
+	#recherche_filtre h2{
+		margin-top: 10%;
 	}
 	/*recherche_input section*/
 	#rechercher{
@@ -741,12 +750,13 @@ footer p{
 	.boxaside{
 		width:85%;
 		padding-left:3%;
+		margin-left: 5%;
 	}
 
 	
 	/*lower section*/
 	#activites{
-		margin-left:3%;
+		margin-left:2%;
 		margin-top:-10%;
 	}
 	#low_ctr{
