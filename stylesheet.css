@@ -237,7 +237,7 @@ label{
 	font-family:'Raleway', sans-serif;
 	font-weight:700;
 	color:black;
-	font-size:20px;
+	font-size:1.2em;
 }
 #hebergements_contenu{
 	width:92%;
@@ -245,9 +245,13 @@ label{
 	display:flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	align-items: flex-start;
 	margin-top: 6%;
 	margin-bottom:-10%;
+}
+#hebergements_contenu a{
+	color:black;
+	text-decoration: none;
+	display: block;
 }
 .boxcenter{
 	background-color: white;
@@ -255,10 +259,6 @@ label{
 	height:35%;
 	border-radius: 18px;
 	box-shadow:3px 5px 6px #e7e5e5;
-}
-.boxcenter a{
-	color:black;
-	text-decoration: none;
 }
 img[alt*="Image chambre"]{
 	width:95%;
@@ -520,7 +520,6 @@ footer p{
 	nav{
 		width:55%;
 	}
-	
 
 	/*filtres*/
 	#filtres{
@@ -565,12 +564,15 @@ footer p{
 		height: 600px;
 	}
 	#hebergements_contenu{
-		width: 95%;
-		height: 85%;
+		width: 94%;
+		height: 82%;
+		justify-content: space-around;
 	}
 	.boxcenter{
-		width: 32%;
+		width: 29%;
+		height:33%;
 	}
+	
 	/*aside box*/
 	#aside_ctr{
 		width:auto;
@@ -589,6 +591,7 @@ footer p{
 	}
 	.boxlow{
 		width:auto;
+		height:80%;
 		margin-bottom:4%;
 	}
 	#bbox_low2{
