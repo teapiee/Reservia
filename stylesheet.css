@@ -186,8 +186,6 @@ label{
 
 /*info section*/
 #info_icon{
-	color:#0065FC;
-	font-weight: lighter;
 	font-size:12px;
 	width:15px;
 	height:15px;
@@ -196,6 +194,9 @@ label{
 	padding:4px;
 	text-align: center;
 	margin-right: 10px;
+}
+#info i{
+	color:#0065FC;
 }
 #info_texte{
 	font-family:'Raleway', sans-serif;
@@ -207,7 +208,6 @@ label{
 }
 
 /*Midcenter Section*/
-
 #hebergements{ /*container for center and side: flexed*/
 	display:flex;
 	justify-content: space-between;
