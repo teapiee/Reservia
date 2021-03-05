@@ -31,18 +31,18 @@ nav{
 .menu, #inscription{
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 }
-.menu_nav a{
+.menu_nav{
 	color:black;
+}
+.menu_nav a, #inscription a{
 	text-decoration: none;
 }
-#inscription a{
-	text-decoration: none;
-}
-.menu_nav a:active{
+.menu_nav a:hover{
 	color:#0065FC;
 }
+
 .menu_nav a:visited{
 	color:black;
 }
@@ -143,6 +143,15 @@ label{
 	color:#0065FC;
     background-color: #DEEBFF;
     border-radius:50%;
+	padding-top:10px; /*center icon in the circle*/
+	margin-right: -17%;
+}
+#animaux_icon{
+	width:18%;
+	text-align: center;
+	color:#0065FC;
+	background-color: #DEEBFF;
+	border-radius:50%;
 	padding-top:10px; /*center icon in the circle*/
 	margin-right: -17%;
 }
@@ -696,6 +705,10 @@ footer p{
 		width:23%;
 		margin-right:-30px;
 	}
+	#animaux_icon{
+		width:15%;
+		margin-right:-30px;
+	}
 	#economique{
 		width: 80%;
 	}
@@ -705,8 +718,12 @@ footer p{
 	#romantique{
 		width:80%;
 	}
+	#animaux_filtres{
+		display:flex;
+		width:250px;
+	}
 	#animaux{
-		width:95%;
+		width:60%;
 	}
 
 	/*mid section*/
