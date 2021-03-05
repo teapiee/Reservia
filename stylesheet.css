@@ -98,7 +98,7 @@ label{
 }
 #rechercher{
     width:95px;
-    height:40px;
+    height:38px;
     border:1px rgb(238, 235, 235) solid;
     border-radius: 0px 12px 12px 0px;
     font-family: 'Raleway', sans-serif;
@@ -115,7 +115,7 @@ label{
 
 /*filter section*/
 #filtres{
-	width:80%;
+	width:87%;
 	height:50px;
 	display:flex;
 	justify-content: space-between;
@@ -128,7 +128,6 @@ label{
 #filtres_texte{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
-	width:10%;
 	padding-top:10px;
 }
 .filtres_contenu{
@@ -162,16 +161,16 @@ label{
 	text-align:center;
 }
 #economique, #romantique{
-	width:60%;
+	width:65%;
 	padding-left:13%;
 }
 #familial{
-	width:50%;
-	padding-left:11%;
+	width:60%;
+	padding-left:9%;
 }
 #animaux{
-	width:85%;
-	padding-left:11%;
+	width:90%;
+	padding-left:13%;
 }
 #filtrestexte, #economique, #romantique, #familial, #animaux{
 	font-size: 0.9em;
@@ -247,7 +246,7 @@ label{
 	font-size:1.2em;
 }
 #hebergements_contenu{
-	width:92%;
+	width:94%;
 	height:85%;
 	display:flex;
 	justify-content: space-between;
@@ -258,45 +257,47 @@ label{
 #hebergements_contenu a{
 	color:black;
 	text-decoration: none;
-	display: block;
+	
 }
 .boxcenter{
 	background-color: white;
 	width:30%;
-	height:35%;
+	height:37%;
 	border-radius: 18px;
 	box-shadow:3px 5px 6px #e7e5e5;
 }
 img[alt*="Image chambre"]{
 	width:95%;
-	height:55%;
+	height:53%;
     border-radius:15px 15px 0px 0px;
 	margin-top:4px;
 	margin-left:6px;
 	object-fit: cover;
 }
 .boxcenter_texte{
-	height:45%;
-	margin-top:-11px;
-	padding-left:15px;
+	width:100%;
+	height:43%;
+	margin-top:-3%;
+	padding-left:5%;
 }
-.nomhebergement{
+.nomhebergement{   /*for center and aside boxes*/
+	width:100%;
 	font-family:'Raleway', sans-serif;
 	font-weight:700;
-	font-size:15px;
-	margin-bottom:-8px;
+	font-size:0.9em;
+	margin-bottom:-3%;
 }
-.prix{
+.prix{            /*for center and aside boxes*/
 	font-family:'Raleway', sans-serif;
 	font-weight:400;
-	font-size:13px;
-	margin-bottom:-5px;
+	font-size:0.8em;
+	margin-bottom:-3%;
 }
-.classement{
+.classement_center{
 	color:#0065FC;
-	font-size:11px;
+	font-size:0.7em;
 }
-.etoiles{
+.etoiles{        /*for center and aside boxes*/
 	color:rgb(209, 203, 203);
 }
 #plus{
@@ -317,6 +318,7 @@ img[alt*="Image chambre"]{
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
+	align-items: center;
 }
 #aside_ctr a{
 	color:black;
@@ -324,25 +326,30 @@ img[alt*="Image chambre"]{
 }
 #titre_aside{
 	width:100%;
-	height:50px;
-	margin-bottom:-10px;
+	height:10%;
 	display:flex;
 	justify-content:space-between;
 }
 aside h2{
-	width:70%;
-	height:25px;
-	margin-left:30px;
+	width:90%;
+	margin-left:8%;
 	font-family:'Raleway', sans-serif;
 	font-weight:700;
 	color:black;
-	font-size:20px;
+	font-size:1.2em;
 }
 #icon_chart{
-	height:20px;
-	font-size: 25px;
-	margin-top:18px;
-	margin-right:35px;
+	font-size: 1.6em;
+	margin-top:4%;
+	margin-right:9%;
+}
+#aside_contenu{
+	height:85%;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top:-15%;
 }
 .boxaside{
 	background-color: white;
@@ -350,27 +357,27 @@ aside h2{
 	height:140px;
 	border-radius: 18px;
 	box-shadow:3px 5px 6px #e7e5e5;
-	padding-left:3%; /*move photo to the right*/
-	margin-left:7%; /*move box to the right*/
 	display:flex;
 	justify-content: space-around;
 }
 img[title*="Cliquez ici"]{ /*TEST for images*/
 	width:95%;
-	height:130px;
-	margin:5px 0px 5px 7px;
+	height:92%;
 	border-radius:15px 0px 0px 15px;
 	object-fit: cover;
 }
 .boxaside_img{
-	width:45%;
-	margin-left:-28px;
+	width:43%;
+	margin-left:-3%;
 }
 .boxaside_texte{
-	width:45%;
-	padding-top:13px;
+	width:50%;
 }
-
+.classement_aside{
+	color:#0065FC;
+	font-size:0.7em;
+	margin-top:25%;
+}
 
 /*lower section*/
 #activites_texte{
@@ -509,7 +516,7 @@ footer p{
 /*MEDIA QUERIES*/
 
 /*tablet*/
-@media all and (max-width:768px){
+@media all and (max-width:950px){
 	
 	body{
 		margin-left:3%;
@@ -543,16 +550,18 @@ footer p{
 		height:85%;
 	}
 	.filtres_icon{
-		width:20%;
+		width:22%;
 	}
-	.eco_rom{
-		width: 65%;
+	#animaux_filtres{
+		width:225px;
+	}
+	#economique, #romantique{
+		width:70%;
+		padding-left:17%;
 	}
 	#familial{
-		width: 60%;
-	}
-	#animaux{
-		width:100%;
+		width:65%;
+		padding-left:12%;
 	}
 	/*mid section*/
 	#hebergements{
@@ -574,16 +583,39 @@ footer p{
 		width: 29%;
 		height:33%;
 	}
+	.boxcenter_texte{
+		margin-top:-5%;
+		padding-left:6%;
+	}
 	
 	/*aside box*/
 	#aside_ctr{
 		width:auto;
 	}
+	aside h2{
+		width:80%;
+		margin-top: 4%;
+	}
+	#icon_chart{
+		margin-right:15%;
+	}
+	#aside_contenu{
+		width:80%;
+		margin-top:0;
+	}
 	.boxaside{
-		width:70%;
-		padding-left:1%;
-		margin-left:15%;
-		margin-top:-4%;
+		height:28%;
+	}
+	img[title*="Cliquez ici"]{ 
+		height:92%;
+		margin-top:3%;
+	}
+	.boxaside_img{
+		width:47%;
+		margin-left:-3%;
+	}
+	.boxaside_texte{
+		width:45%;
 	}
 
 	/*lower section*/
@@ -607,7 +639,6 @@ footer p{
 		height:47%;
 	}
 	
-
 	/*footer*/
 	footer{
 		height:300px;
@@ -618,7 +649,7 @@ footer p{
 /*portable*/
 @media all and (max-width:480px){
 	
-	/*header unsolved*/
+	/*header*/
 	header{
 		height:100px;
 	}
@@ -648,7 +679,6 @@ footer p{
 		flex-direction:column-reverse;
 		justify-content: space-around;
 	}
-
 	#recherche_filtre{
 		margin-left:2%;
 		margin-right:2%;
@@ -680,7 +710,7 @@ footer p{
         padding-top:10px;
         padding-left:10px;
     }
-	/*filtres unsolved: flex wrap filtres animaux*/
+	/*filtres*/
 	#filtres{
 		width:auto;
 		height:180px;
@@ -693,13 +723,14 @@ footer p{
 	}
 	#filtres_ctr{
 		width:auto;
-		height:70%;
+		height:80%;
+		margin-top:3%;
 		flex-wrap: wrap;
 		justify-content:space-between;
 	}
 	.filtres_contenu{
 		width:45%;
-		height:30%;
+		height:25%;
 	}
 	.filtres_icon{
 		width:23%;
@@ -725,7 +756,6 @@ footer p{
 	#animaux{
 		width:60%;
 	}
-
 	/*mid section*/
 	#hebergements{
 		width:auto;
@@ -759,18 +789,25 @@ footer p{
 	img[alt*="Image chambre"]{
 		margin-left:8px;	
 	}
-
+	.boxcenter_texte{
+		margin-top:-1%;
+	}
 	/*aside section*/
 	#aside_ctr{
 		border-radius: 1px;
 	}
 	.boxaside{
-		width:85%;
-		padding-left:3%;
-		margin-left: 5%;
+		width:95%;
+		height:26%;
+	}
+	#aside_contenu{
+		width:90%;
+	}
+	img[title*="Cliquez ici"]{ 
+		width:95%;
+		height:92%;
 	}
 
-	
 	/*lower section*/
 	#activites{
 		margin-left:2%;
@@ -814,7 +851,6 @@ footer p{
 	img[alt="Le Vieux Port"], img[alt="Le Fort de Pomègues"], img[alt="Les Îles du Frioul"], img[alt="Le Parc National des Calanques"], img[alt="Le Notre-Dame-de-la-Garde"], img[alt="Le Parc Longchamp"]{
 		height:75%;
 	}
-	
 	/*footer*/
 	footer{
 		width:auto;
