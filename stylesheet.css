@@ -84,7 +84,7 @@ label{
     height:50px;
     padding:9px;
     text-align: center;
-    border:1px #F2F2F2 solid;
+	border:1px rgb(238, 235, 235) solid;
     border-radius:15px 0px 0px 15px;
     background-color:#F2F2F2;
 }
@@ -258,8 +258,7 @@ label{
 }
 #hebergements_contenu a{
 	color:black;
-	text-decoration: none;
-	
+	text-decoration: none;	
 }
 .boxcenter{
 	background-color: white;
