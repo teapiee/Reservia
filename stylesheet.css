@@ -13,6 +13,7 @@ header{
 	display:flex;
 	justify-content:space-between;
 	margin-bottom:3%;
+	margin-top:-0.5rem;
 }
 nav{
 	width:40%;
@@ -26,7 +27,8 @@ nav{
 }
 #inscription{
 	width:25%;
-	height:40%;
+	margin-top:0;
+	padding-top:3%;
 }
 .menu, #inscription{
 	text-align: center;
@@ -35,24 +37,23 @@ nav{
 }
 .menu{
 	width:45%;
+	margin-top:0;
+	padding-top:5%;
 }
-.menu a, #inscription a{
+.menu_nav a, #inscription a{
 	text-decoration: none;
 }
-.menu a{
+.menu_a{
 	color:black;
-	padding:15%;
 }
-.menu a:hover{
+.menu_a:hover{
 	color:#0065FC;
-	border-top:2px solid #0065FC;
+}
+.menu:hover, #inscription:hover{
+	border-top:2px solid #0065FC; 
 }
 #inscription a{
 	color:#0065FC;
-	padding:16%;
-}
-#inscription a:hover{
-	border-top:2px solid #0065FC;
 }
 .menu_nav a:visited{
 	color:black;
@@ -672,22 +673,31 @@ footer p{
 	.menu{
 		width:50%;
 		font-weight: 600;
+		padding-bottom: 2%;
+		border-bottom:2px solid rgb(189, 187, 187);
 	}	
 	.menu_nav{
 		width:150%;
 		margin-left:-45%;
-		margin-bottom:-10%;
+		margin-bottom:-10%;	
 	}
 	#inscription{
-		width:93%;
+		width:88%;
 		height:20%;
 		display:flex;
 		justify-content:flex-end;
+		margin-top:5%;
 	}
 	nav{
 		width:100%;
 		flex-direction:column-reverse;
 		justify-content: space-around;
+	}
+	.menu:hover, #inscription:hover{
+		border-top:none;	
+	}
+	.menu:hover{
+		border-bottom:2px solid #0065FC; 
 	}
 	#recherche_filtre{
 		margin-left:2%;
