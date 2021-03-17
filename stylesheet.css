@@ -43,10 +43,10 @@ nav{
 .menu_nav a, #inscription a{
 	text-decoration: none;
 }
-.menu_a{
+.menu_nav a{
 	color:black;
 }
-.menu_a:hover{
+.menu_nav a:hover{
 	color:#0065FC;
 }
 .menu:hover, #inscription:hover{
